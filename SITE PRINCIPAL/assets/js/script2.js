@@ -4,8 +4,7 @@
 
 /**
  * PRELOAD
- * 
- * loading will be end after document is loaded
+ * o carregamento terminará depois que o arquivo for carregado
  */
 
 const preloader = document.querySelector("[data-preaload]");
@@ -18,8 +17,8 @@ window.addEventListener("load", function () {
 
 
 /**
- * add event listener on multiple elements
- */
+ *  Evento listener 
+ *  */
 
 const addEventOnElements = function (elements, eventType, callback) {
   for (let i = 0, len = elements.length; i < len; i++) {
@@ -29,8 +28,12 @@ const addEventOnElements = function (elements, eventType, callback) {
 
 
 
+
+
+
+
 /**
- * NAVBAR
+ * navbar
  */
 
 const navbar = document.querySelector("[data-navbar]");
@@ -45,10 +48,54 @@ const toggleNavbar = function () {
 
 addEventOnElements(navTogglers, "click", toggleNavbar);
 
+// Selecione todos os links da navbar
+const navLinks = document.querySelectorAll('.navbar a');
+
+// Adicione um ouvinte de evento de clique em cada link
+navLinks.forEach(link => {
+  link.addEventListener('click', function(event) {
+    event.preventDefault(); // Evita o comportamento padrão de redirecionamento do link
+
+    // Obtenha o destino da rolagem (ID da seção correspondente ao link)
+    const targetId = this.getAttribute('href');
+
+    // Verifique se o destino é uma seção válida existente no documento
+    const targetSection = document.querySelector(targetId);
+    if (targetSection) {
+      // Obtenha a posição da seção de destino
+      const targetPosition = targetSection.offsetTop;
+
+      // Realize a rolagem suave até a seção de destino
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
+    }
+
+    // Verifique se o menu está aberto e feche-o
+    if (navbar.classList.contains('active')) {
+      toggleNavbar();
+    }
+  });
+});
+
+
+// Feche o menu ao clicar fora dele
+overlay.addEventListener('click', toggleNavbar);
+
+
+
+
+
+
+
+
+
+
 
 
 /**
- * HEADER & BACK TOP BTN
+ * Header e back to top btn
  */
 
 const header = document.querySelector("[data-header]");
@@ -81,7 +128,7 @@ window.addEventListener("scroll", function () {
 
 
 /**
- * HERO SLIDER
+ * Hero slider
  */
 
 const heroSlider = document.querySelector("[data-hero-slider]");
@@ -122,6 +169,7 @@ const slidePrev = function () {
 
 heroSliderPrevBtn.addEventListener("click", slidePrev);
 
+
 /**
  * auto slide
  */
@@ -145,7 +193,7 @@ window.addEventListener("load", autoSlide);
 
 
 /**
- * PARALLAX EFFECT
+ * efeito parallax
  */
 
 const parallaxItems = document.querySelectorAll("[data-parallax-item]");
