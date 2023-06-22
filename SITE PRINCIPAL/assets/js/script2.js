@@ -3,8 +3,8 @@
 
 
 /**
- * PRELOAD
- * o carregamento terminará depois que o arquivo for carregado
+  - PRELOAD
+ - o carregamento terminará depois que o arquivo for carregado
  */
 
 const preloader = document.querySelector("[data-preaload]");
@@ -15,10 +15,9 @@ window.addEventListener("load", function () {
 });
 
 
-
 /**
- *  Evento listener 
- *  */
+ -  Evento listener 
+*/
 
 const addEventOnElements = function (elements, eventType, callback) {
   for (let i = 0, len = elements.length; i < len; i++) {
@@ -26,14 +25,8 @@ const addEventOnElements = function (elements, eventType, callback) {
   }
 }
 
-
-
-
-
-
-
 /**
- * navbar
+  - navbar
  */
 
 const navbar = document.querySelector("[data-navbar]");
@@ -79,23 +72,13 @@ navLinks.forEach(link => {
   });
 });
 
-
 // Feche o menu ao clicar fora dele
 overlay.addEventListener('click', toggleNavbar);
 
 
 
-
-
-
-
-
-
-
-
-
 /**
- * Header e back to top btn
+  - Header e back to top 
  */
 
 const header = document.querySelector("[data-header]");
@@ -128,7 +111,7 @@ window.addEventListener("scroll", function () {
 
 
 /**
- * Hero slider
+  - Hero slider
  */
 
 const heroSlider = document.querySelector("[data-hero-slider]");
@@ -171,7 +154,7 @@ heroSliderPrevBtn.addEventListener("click", slidePrev);
 
 
 /**
- * auto slide
+  - auto slide
  */
 
 let autoSlideInterval;
@@ -193,7 +176,7 @@ window.addEventListener("load", autoSlide);
 
 
 /**
- * efeito parallax
+  - efeito parallax
  */
 
 const parallaxItems = document.querySelectorAll("[data-parallax-item]");
@@ -205,7 +188,7 @@ window.addEventListener("mousemove", function (event) {
   x = (event.clientX / window.innerWidth * 10) - 5;
   y = (event.clientY / window.innerHeight * 10) - 5;
 
-  // reverse the number eg. 20 -> -20, -5 -> 5
+ 
   x = x - (x * 2);
   y = y - (y * 2);
 
