@@ -6,6 +6,7 @@ $consulta = "SELECT pessoa, nome, setor, data, horario FROM clientes";
 $resultado = mysqli_query($connection, $consulta);
 
 mysqli_close($connection);
+
 ?>
 
 
