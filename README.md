@@ -4,7 +4,7 @@ Trabalho da disciplina --- Desenvolvimento web em HTML5, CSS, JAVASCRIPT e PHP  
 Feitos por:  <i>Nathan Silva, Lucas Duarte e Gleydson Ribeiro</i> <br>
 Professor: <i>Henrique Mota</i> 
 
- - projeto foi hospedado na 000webhost ( Link abaixo )  <br>
+ - Projeto foi hospedado na 000webhost ( Link abaixo )  <br>
 <b>SITE PRINCIPAL:</b> https://websiteestacio.000webhostapp.com/  <br>
 <b>AGENDAMENTO:</b> https://estaciosports.000webhostapp.com/
 
