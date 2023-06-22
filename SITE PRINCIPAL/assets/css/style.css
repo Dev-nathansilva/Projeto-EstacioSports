@@ -77,17 +77,6 @@ body {
 }
 
 
-.swiper-pagination-bullet {
-  height: 2rem;
-  width: 2rem;
-  background: #fff;
-  border-radius: 0;
-}
-
-.swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: var(--azul);
-}
-
 .about {
   display: -webkit-box;
   display: -ms-flexbox;

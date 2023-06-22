@@ -67,18 +67,6 @@ section{
   }
 }
 
-
-.swiper-pagination-bullet{
-  height: 2rem;
-  width: 2rem;
-  background: $white;
-  border-radius: 0;
-
-  &.swiper-pagination-bullet-active{
-    background: $blue;
-  }
-} 
-
 .about{
   display: flex;
   align-items: center;
