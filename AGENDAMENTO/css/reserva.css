@@ -64,34 +64,34 @@ body {
   display: flex;
   column-gap: 15px;
 }
-.form .gender-box {
+.form .person-box {
   margin-top: 20px;
 }
-.gender-box h3 {
+.person-box h3 {
   color: #fff;
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 8px;
 }
-.form :where(.gender-option, .gender) {
+.form :where(.person-option, .person) {
   display: flex;
   align-items: center;
   column-gap: 50px;
   flex-wrap: wrap;
 }
-.form .gender {
+.form .person {
   column-gap: 5px;
 }
-.gender input {
+.person input {
   accent-color: rgb(130, 106, 251);
 }
-.form :where(.gender input, .gender label) {
+.form :where(.person input, .person label) {
   cursor: pointer;
 }
-.gender label {
+.person label {
   color: #9f9999;
 }
-.address :where(input, .select-box) {
+.school :where(input, .select-box) {
   margin-top: 15px;
 }
 .select-box select {
@@ -152,7 +152,7 @@ body {
   .form .column {
     flex-wrap: wrap;
   }
-  .form :where(.gender-option, .gender) {
+  .form :where(.person-option, .person) {
     row-gap: 15px;
   }
 }
