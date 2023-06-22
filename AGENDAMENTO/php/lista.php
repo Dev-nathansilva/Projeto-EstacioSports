@@ -78,7 +78,7 @@ mysqli_close($connection);
 </head>
 <body>
     <div class="container">
-    <a href="./index.html" class="close-icon"><i class="fa-solid fa-xmark" style="color: rgb(0,0,0);"></i></a>
+    <a href="../index.html" class="close-icon"><i class="fa-solid fa-xmark" style="color: rgb(0,0,0);"></i></a>
         <h1 class="center">Lista de Reservas</h1>
         <table>
             <tr>
