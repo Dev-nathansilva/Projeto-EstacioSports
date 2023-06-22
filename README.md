@@ -5,8 +5,8 @@ Feitos por:  <i>Nathan Silva, Lucas Duarte e Gleydson Ribeiro</i> <br>
 Professor: <i>Henrique Mota</i> 
 
  - Projeto foi hospedado na 000webhost ( Link abaixo )  <br>
-<b>SITE PRINCIPAL:</b> <a href="https://websiteestacio.000webhostapp.com/" target="_blank">https://websiteestacio.000webhostapp.com/</a>  <br>
-<b>AGENDAMENTO:</b>  <a href="  https://estaciosports.000webhostapp.com/" target="_blank">https://estaciosports.000webhostapp.com/</a>
+<b>SITE PRINCIPAL:</b> https://websiteestacio.000webhostapp.com/  <br>
+<b>AGENDAMENTO:</b>  https://estaciosports.000webhostapp.com/
 
 
 
