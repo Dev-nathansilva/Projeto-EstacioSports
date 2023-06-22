@@ -1,7 +1,5 @@
 'use strict';
 
-
-
 /**
   - PRELOAD
  - o carregamento terminará depois que o arquivo for carregado
