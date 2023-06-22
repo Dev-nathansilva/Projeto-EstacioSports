@@ -6,16 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Registration Form in HTML CSS</title>
-    <!---Custom CSS File--->
-    <link rel="stylesheet" href="reserva.css" />
+    <!--- CSS link--->
+    <link rel="stylesheet" href="./css/reserva.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">    
   </head>
   <body>
     <section class="container">
-      <!-- &#9786;  carinha   &#10157; seta -->
       <header><i class="fa-solid fa-basketball" style="color: #ff8c00;"></i> Reserva ESTACIO SPORTS</header>
       <p class="paragrafo">*quando estiver concluida a reserva apresente-se no dia e no horário para confirmar sua presença</p>
-      <form action="conexao.php" method="post" class="form" onsubmit=" return validarFormulario(event)">
+      <form action="./php/conexao.php" method="post" class="form" onsubmit=" return validarFormulario(event)">
         <div class="input-box">
           <label>Nome Completo*</label>
           <input type="text" placeholder="Digite seu nome completo" name="nome" required />
@@ -91,7 +90,7 @@
           </div>
         </div>
         <input type="submit" value="Reservar" class="btn-form" name="enviar">
-        <a href="./lista.php" class="links">Verifique Horário agendados</a>
+        <a href="./php/lista.php" class="links">Verifique Horário agendados</a>
         <a href="https://websiteestacio.000webhostapp.com/" class="links">&#129092; voltar para EstacioSports</a>
       </form>
     </section>

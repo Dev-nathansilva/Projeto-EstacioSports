@@ -22,9 +22,8 @@ mysqli_close($connection);
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-image: url(./img/fundo.jpeg);
+            background-image: url(../img/fundo.jpeg);
         }
-
 
         .container {
             position: relative;
@@ -50,20 +49,18 @@ mysqli_close($connection);
             padding: 8px;
             text-align: left;
             border-bottom: 1px dashed black;
-            border-right: 1px dashed black; /* Adicionando borda à direita */
+            border-right: 1px dashed black; 
             width: 20%;
             white-space: nowrap;
-
-
         }
 
         th:last-child,
         td:last-child {
-            border-right: none; /* Removendo borda à direita da última coluna */
+            border-right: none; 
         }
        
         th span.fas {
-        margin-right: 5px; /* Ajuste a margem conforme necessário */
+        margin-right: 5px; 
         }
         th span.fas {
             vertical-align: middle;

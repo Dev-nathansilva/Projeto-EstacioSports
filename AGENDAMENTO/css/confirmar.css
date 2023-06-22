@@ -12,7 +12,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background-image: url(img/fundo.jpeg);
+  background-image: url(../img/fundo.jpeg);
   background-repeat: no-repeat;
 }
 .container {
@@ -33,10 +33,10 @@ body {
 
 .column {
   display: flex;
-  justify-content: center; /* Alinhar os botões no centro horizontalmente */
-  flex-wrap: wrap; /* Permitir que os botões fiquem um abaixo do outro em telas menores */
-  gap: 15px; /* Espaçamento entre os botões */
-  margin-top: -4px; /* Espaçamento entre o header e os botões */
+  justify-content: center; 
+  flex-wrap: wrap;
+  gap: 15px; 
+  margin-top: -4px; 
 }
 
 button {
@@ -59,12 +59,12 @@ button:hover {
 /* Responsivo */
 @media screen and (max-width: 505px) {
   .column {
-    flex-direction: column; /* Alinhar os botões verticalmente em telas menores */
-    align-items: center; /* Alinhar os botões no centro verticalmente em telas menores */
-    margin-top: 0; /* Remover o espaçamento entre o header e os botões em telas menores */
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 0; 
     gap: 0px;
   }
   button {
-    width: 100%; /* Botões ocupam a largura completa em telas menores */
+    width: 100%; 
   }
 }
